@@ -22,6 +22,7 @@ const useCollections = () => {
     items: [
       { label: "English", value: "en" },
       { label: "中文", value: "zh" },
+      { label: "日本語", value: "jp" }, // 添加日语选项
     ],
   });
 

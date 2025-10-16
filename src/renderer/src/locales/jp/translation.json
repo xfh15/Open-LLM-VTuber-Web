@@ -1,0 +1,136 @@
+{
+  "common": {
+    "save": "保存",
+    "cancel": "キャンセル",
+    "settings": "設定",
+    "close": "閉じる",
+    "accept": "承認"
+  },
+  "settings": {
+    "tabs": {
+      "general": "一般",
+      "live2d": "Live2D",
+      "asr": "音声認識",
+      "tts": "音声合成",
+      "agent": "エージェント",
+      "about": "概要"
+    },
+    "general": {
+      "language": "言語",
+      "useCameraBackground": "カメラ背景を使用する",
+      "showSubtitle": "字幕を表示する",
+      "backgroundImage": "背景画像",
+      "customBgUrlPlaceholder": "画像URLを入力",
+      "customBgUrl": "またはカスタム背景URLを入力",
+      "characterPreset": "キャラクタープリセット",
+      "wsUrl": "WebSocketアドレス",
+      "baseUrl": "基本URL",
+      "imageCompressionQuality": "画像圧縮品質",
+      "imageCompressionQualityHelp": "JPEG圧縮品質(0.1〜1.0)。デフォルトは0.8です。AIモデルに画像を送信する際、圧縮を行わないためファイルサイズが大きくなる可能性があります。",
+      "imageMaxWidth": "画像の最大幅",
+      "imageMaxWidthHelp": "画像を縮小する際の最大幅。これを超える場合は自動的に縮小されます。0に設定すると制限なし。いくつかのAIモデルは超高解像度画像を処理できないため、この設定があります。多くのモデルは自動処理可能なため、デフォルトは0（無制限）です。"
+    },
+    "live2d": {
+      "pointerInteractive": "マウスインタラクション",
+      "scrollToResize": "ホイールで拡大縮小を有効にする"
+    },
+    "asr": {
+      "autoStopMic": "AIが話し始めたらマイクを自動でオフ",
+      "autoStopMicDesc": "AIが話し始めると自動でマイクをオフにし、音声フィードバックを防止します。",
+      "autoStartMicOnConvEnd": "会話終了後にマイクを自動でオン",
+      "autoStartMicOnConvEndDesc": "AIが話し終えたら自動的にマイクを再開し、シームレスな会話を実現します。",
+      "autoStartMicOn": "AIが割り込まれた際にマイクを自動でオン",
+      "autoStartMicOnDesc": "AIが途中で遮られた場合、自動的にマイクを再起動し、連続的なインタラクションを維持します。",
+      "positiveSpeechThreshold": "音声検出閾値",
+      "positiveSpeechThresholdDesc": "音声を検出するための最小信頼度(1〜100)。値が高いほど誤検出を減らせます。",
+      "negativeSpeechThreshold": "音声終了閾値",
+      "negativeSpeechThresholdDesc": "音声終了を判断する信頼度の下限(0〜100)。値が低いほど検出が鈍感になります。",
+      "redemptionFrames": "検証フレーム数",
+      "redemptionFramesDesc": "音声検出を確定するために必要な連続フレーム数(1〜100)。値が高いほどノイズによる誤検出を減らせます。"
+    },
+    "agent": {
+      "allowProactiveSpeak": "AIの自発的発話を許可",
+      "idleSecondsToSpeak": "AIが発話するまでの待機秒数",
+      "allowButtonTrigger": "「挙手」ボタンでAI発話を促す"
+    },
+    "about": {
+      "title": "Open LLM VTuber フロントエンド",
+      "version": "バージョン",
+      "projectLinks": "プロジェクトリンク",
+      "github": "GitHub",
+      "documentation": "ドキュメント",
+      "copyright": "著作権",
+      "viewLicense": "ライセンスを表示"
+    }
+  },
+  "footer": {
+    "typeYourMessage": "メッセージを入力...",
+    "cameraControl": "クリックしてカメラを起動",
+    "cameraStopping": "クリックしてカメラを停止",
+    "screenControl": "クリックして画面共有を開始",
+    "screenStopping": "クリックして画面共有を停止"
+  },
+  "sidebar": {
+    "camera": "カメラ",
+    "screen": "画面",
+    "browser": "ブラウザ",
+    "live": "配信",
+    "noMessages": "メッセージがありません。会話を始めましょう！",
+    "noBrowserSession": "アクティブなブラウザセッションなし",
+    "browserSession": "ブラウザセッション"
+  },
+  "group": {
+    "management": "グループ管理",
+    "yourUuid": "あなたのUUID",
+    "inviteMember": "メンバーを招待",
+    "enterMemberUuid": "メンバーUUIDを入力",
+    "invite": "招待",
+    "members": "メンバー",
+    "you": "あなた",
+    "leaveGroup": "グループを退出",
+    "removeMember": "メンバーを削除",
+    "leave": "退出"
+  },
+  "history": {
+    "chatHistoryList": "チャット履歴リスト",
+    "noMessages": "メッセージがありません"
+  },
+  "notification": {
+    "characterLoaded": "新しいキャラクターが読み込まれました",
+    "characterSwitched": "キャラクターを切り替えました",
+    "historyLoaded": "履歴が読み込まれました",
+    "newConversation": "新しい会話が開始されました",
+    "newChatHistory": "新しいチャット履歴が作成されました",
+    "historyDeleteSuccess": "履歴の削除に成功しました",
+    "historyDeleteFail": "履歴の削除に失敗しました"
+  },
+  "error": {
+    "cameraApiNotSupported": "このデバイスはカメラAPIをサポートしていません",
+    "noCameraFound": "カメラデバイスが見つかりません",
+    "failedStartCamera": "カメラの起動に失敗しました",
+    "failedStartBackgroundCamera": "背景カメラの起動に失敗しました",
+    "failedStartScreenCapture": "画面キャプチャの開始に失敗しました",
+    "failedStartVAD": "音声活動検出の開始に失敗しました",
+    "llmCantHear": "AIが音声を検出できません",
+    "audioPlayback": "音声再生エラー",
+    "enterValidUuid": "有効なUUIDを入力してください",
+    "cannotDeleteCurrentHistory": "現在のチャット履歴を削除できません",
+    "failedCapture": "{{source}}フレームのキャプチャに失敗しました",
+    "failedParseWebSocket": "WebSocketメッセージの解析に失敗しました",
+    "websocketNotOpen": "WebSocketが接続されていません",
+    "vadMisfire": "音声が短すぎます。音量を上げて話すか、より長く話してください。または、音声認識設定（検出閾値の引き下げ、負の閾値の引き下げ、検証フレーム数の減少）を調整してください。"
+  },
+  "aiState": {
+    "idle": "待機中",
+    "thinking-speaking": "思考／発話中",
+    "interrupted": "中断されました",
+    "loading": "読み込み中",
+    "listening": "聞き取り中",
+    "waiting": "待機中"
+  },
+  "wsStatus": {
+    "connected": "接続済み",
+    "connecting": "接続中",
+    "clickToReconnect": "クリックして再接続"
+  }
+}
